@@ -1,0 +1,117 @@
+/*
+@font-face {
+	font-family: GenshinFont;
+	src: url("fonts/GenshinFont.ttf");
+}
+*/
+* {
+	font-family: GenshinFont;
+	image-rendering: pixelated;
+	font-size: 16px;
+}
+div {
+	display: block;
+}
+.fixed-center {
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.genshin-dialog-bright .dialog-body {
+	text-align: center;
+	margin-top: 5px;
+	color: rgb(73, 83, 102);
+}
+.genshin-dialog-dark .dialog-body {
+	text-align: center;
+	margin-top: 5px;
+	color: rgb(143, 142, 147);
+}
+
+/*dialog*/
+.genshin-dialog-bright {
+	width: 380px;
+	border-top: 51px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 212px solid transparent;
+	border-left: 50px solid transparent;
+	-webkit-border-image: url(images/dialog_background_opaque_bright.png) 131 122 188 122 fill repeat;
+	-o-border-image: url(images/dialog_background_opaque_bright.png) 131 122 188 122 fill repeat;
+	border-image: url(images/dialog_background_opaque_bright.png) 131 122 188 122 fill repeat;
+	border-image-width: 53px 50px 73px 50px;
+}
+.genshin-dialog-dark {
+	width: 380px;
+	border-top: 51px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 212px solid transparent;
+	border-left: 50px solid transparent;
+	-webkit-border-image: url(images/dialog_background_opaque_dark.png) 131 122 188 122 fill repeat;
+	-o-border-image: url(images/dialog_background_opaque_dark.png) 131 122 188 122 fill repeat;
+	border-image: url(images/dialog_background_opaque_dark.png) 131 122 188 122 fill repeat;
+	border-image-width: 53px 50px 73px 50px;
+}
+.genshin-dialog-bright .dialog-title {
+	position: absolute;
+	display: block;
+	text-align: center;
+	top: -30px;
+	left: 0px;
+	right: 0px;
+	font-size: 18px;
+	color: rgb(73, 83, 102);
+}
+.genshin-dialog-dark .dialog-title {
+	position: absolute;
+	display: block;
+	text-align: center;
+	top: -30px;
+	left: 0px;
+	right: 0px;
+	font-size: 18px;
+	color: rgb(211, 188, 142);
+}
+.genshin-dialog-bright .dialog-footer {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: -188px;
+	left: 25%;
+}
+.genshin-dialog-dark .dialog-footer {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: -188px;
+	left: 25%;
+}
+
+/*dialog botton*/
+.genshin-bt-bright-confirm {
+
+}
+.genshin-bt-dark-confirm {
+	color: rgb(236, 229, 216);
+	width: 60px;
+	border-top: 7px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 70px solid transparent;
+	-webkit-border-image: url(images/botton_dark_confirm.png) 0 32 0 65 fill;
+	-o-border-image: url(images/botton_dark_confirm.png) 0 32 0 65 fill;
+	border-image: url(images/botton_dark_confirm.png) 0 32 0 65 fill;
+	border-image-width: 0px 15px 0px 28px;
+}
+.genshin-bt-dark-cancel {
+	color: rgb(236, 229, 216);
+	width: 60px;
+	border-top: 7px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 70px solid transparent;
+	-webkit-border-image: url(images/botton_dark_cancel.png) 0 32 0 65 fill;
+	-o-border-image: url(images/botton_dark_cancel.png) 0 32 0 65 fill;
+	border-image: url(images/botton_dark_cancel.png) 0 32 0 65 fill;
+	border-image-width: 0px 15px 0px 28px;
+}

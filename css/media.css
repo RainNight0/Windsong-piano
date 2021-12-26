@@ -1,0 +1,168 @@
+/*小型移动设备屏幕(小屏手机)*/
+@media screen and (max-width: 654px) {
+	#pianoKeyPanel {
+		left: 54%;
+	}
+	.row-1, .row-2, .row-3 {
+		width: 520px;
+	}
+	#g-clef {
+		width: 15px;
+		height: 40.2px;
+		margin: 4px 20px 4px 11.5px;
+	}
+	#c-clef {
+		width: 18px;
+		height: 25.5px;
+		margin: 0px 18px 10px 10px;
+	}
+	#f-clef {
+		width: 19px;
+		height: 22px;
+		margin: 0px 18px 12px 10px;
+	}
+	.pianoKey {
+		width: 40px;
+		height: 40px;
+		margin: 4px 10px 4px 10px;
+	}
+	.pianoKeyCircle {
+		width: 54px;
+		height: 54px;
+		left: 4.5px;
+		top: -4px;
+	}
+	.line {
+		width: 420px;
+		left: 10%;
+		top: 16%;
+	}
+	.line>div {
+		margin-top: 4px;
+	}
+	#FullScreen {
+		width: 35px;
+		height: 35px;
+	}
+	#ExitFullScreen {
+		width: 35px;
+		height: 35px;
+	}
+	#statement_botton {
+		margin-bottom: 6px;
+	}
+	.statement_text {
+		margin-top: 11px;
+	}
+}
+
+/*中型移动设备屏幕(手机)*/
+@media screen and (max-width: 823px) and (min-width: 655px) {
+	#pianoKeyPanel {
+		left: 50%;
+	}
+	.row-1, .row-2, .row-3 {
+		width: 600px;
+	}
+	#g-clef {
+		width: 19.4px;
+		height: 52px;
+		margin: 4px 20px 4px 15px;
+	}
+	#c-clef {
+		width: 25px;
+		height: 35.5px;
+		margin: 0px 18px 10px 11px;
+	}
+	#f-clef {
+		width: 26px;
+		height: 32px;
+		margin: 0px 18px 12px 11px;
+	}
+	.pianoKey {
+		width: 50px;
+		height: 50px;
+		margin: 4px 13px 4px 13px;
+	}
+	.pianoKeyCircle {
+		width: 64px;
+		height: 64px;
+		left: 4.5px;
+		top: -4px;
+	}
+	.line {
+		width: 530px;
+		left: 10%;
+		top: 19%;
+	}
+	.line>div {
+		margin-top: 5px;
+	}
+	#FullScreen {
+		width: 35px;
+		height: 35px;
+	}
+	#ExitFullScreen {
+		width: 35px;
+		height: 35px;
+	}
+	#statement_botton {
+		width: 20px;
+		height: 20px;
+		margin-bottom: 7.5px;
+	}
+	.statement_text {
+		font-size: 12px;
+		margin-top: 11px;
+	}
+	.dialog-size {
+		width: 500px;
+		height: 45px;
+	}
+}
+
+/*大型移动设备屏幕(平板电脑)*/
+@media screen and (min-width: 824px) {
+	#pianoKeyPanel {
+		left: 50%;
+	}
+	.row-1, .row-2, .row-3 {
+		width: 820px;
+	}
+	#g-clef {
+		width: 29.3px;
+		height: 79px;
+		margin: 4px 20px 4px 5px;
+	}
+	#c-clef {
+		width: 37px;
+		height: 52.3px;
+		margin: 0px 17px 18px 2px;
+	}
+	#f-clef {
+		width: 44px;
+		height: 53.8px;
+		margin: 0px 13px 18px 0px;
+	}
+	.pianoKey {
+		width: 80px;
+		height: 80px;
+		margin: 4px 13px 4px 13px;
+	}
+	.pianoKeyCircle {
+		width: 94px;
+		height: 94px;
+		left: 4.5px;
+		top: -4px;
+	}
+	.line {
+		width: 750px;
+		left: 7%;
+		top: 16%;
+	}
+	.line>div {
+		border-top: solid rgba(255, 255, 255, 0.5) 2px;
+		margin-top: 8px;
+	}
+}
+
