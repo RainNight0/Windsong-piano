@@ -5,7 +5,8 @@
 ## 关于
 
 这是一次在跟群友聊天的时候受群友启发制作的，当时打算做出来给错过活动的玩家弥补遗憾
-![聊天截图](https://user-images.githubusercontent.com/92035194/147400262-b2026965-680c-4247-bbc9-533fe233efaf.jpg)
+
+<img style="width:350px;height:470px;" src="https://user-images.githubusercontent.com/92035194/147400262-b2026965-680c-4247-bbc9-533fe233efaf.jpg">
 
 
 代码部分于 2021年10月5日 完成(结果mhy第二天就宣布下个版本可以去纪念品商店购买，rnmmhy)
