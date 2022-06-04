@@ -12,7 +12,7 @@
 代码部分于 2021年10月5日 完成(结果mhy第二天就宣布下个版本可以去纪念品商店购买，rnmmhy)
 原神风格UI是11月21日开始做的，然后一直鸽到现在只做了个半成品(后续可能会完善(?)
 
-由于没学过JavaScript只好使用了 Ran-ying(染樱) 大佬的JavaScript代码(如果侵犯了您的权利请联系我:night0@qq.com)
+由于没学过JavaScript，弹奏部分的代码使用了 Ran-ying(染樱) 大佬的JavaScript代码
 
 Ran-ying大佬的仓库地址https://github.com/Ran-ying/Genshin-piano
 
@@ -24,6 +24,5 @@ Ran-ying大佬的仓库地址https://github.com/Ran-ying/Genshin-piano
 
 ## 一些已知问题
 
-- 在一些配置较低的设备上弹奏会产生卡顿(暂无解决办法)
-- 点击全屏按钮全屏之后需要手动按F11退出全屏(不懂怎么写退出全屏)
+- 在一些配置较低的设备上弹奏会产生卡顿(暂时没办法解决)
 - “声明”弹窗的“确认”按钮只有defatlt状态(因为UI是朋友帮忙绘制的，最近朋友比较忙所以没做)
