@@ -1,9 +1,7 @@
-/*
 @font-face {
 	font-family: GenshinFont;
-	src: url("fonts/GenshinFont.ttf");
+	src: url("fonts/GenshinFont.woff2");
 }
-*/
 * {
 	font-family: GenshinFont;
 	image-rendering: pixelated;
@@ -28,8 +26,6 @@ div {
 	margin-top: 5px;
 	color: rgb(143, 142, 147);
 }
-
-/*dialog*/
 .genshin-dialog-bright {
 	width: 380px;
 	border-top: 51px solid transparent;
@@ -86,10 +82,10 @@ div {
 	bottom: -188px;
 	left: 25%;
 }
-
-/*dialog botton*/
 .genshin-bt-bright-confirm {
-
+	-webkit-border-image: url(images/botton_bright_comfirm_default.png) 0 160 0 488 fill;
+	-o-border-image: url(images/botton_bright_comfirm_default.png) 0 160 0 488 fill;
+	border-image: url(images/botton_bright_comfirm_default.png) 0 160 0 488 fill;
 }
 .genshin-bt-dark-confirm {
 	color: rgb(236, 229, 216);

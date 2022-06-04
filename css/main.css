@@ -1,7 +1,7 @@
 /*Genshin font*/
 @font-face {
 	font-family: GenshinFont;
-	src: url("fonts/GenshinFont.ttf");
+	src: url("fonts/GenshinFont.woff2");
 }
 
 *{
@@ -36,7 +36,7 @@ body {
 	border: 0px;
 	border-radius: 50%;
 	background-size: cover;
-	margin-bottom: 8px;
+	margin-bottom: 9.5px;
 }
 #statement_botton:hover {
 	background-image: url(../images/statement_hover.png);
@@ -46,7 +46,7 @@ body {
 }
 .statement_text {
 	vertical-align: top;
-	margin-top: 14px; 
+	margin-top: 12.5px; 
 	margin-right: 15px;
 	font-size: 12px;
 }
@@ -59,7 +59,7 @@ body {
 
 .lt { text-decoration: line-through; }
 
-/*顶部按钮栏*/
+
 #site-top {
 	top: 0;
 }
@@ -78,7 +78,7 @@ body {
 	display: inline-block;
 }
 
-/*琴键面板*/
+
 #pianoKeyPanel {
 	position: absolute;
 	bottom: 0px;

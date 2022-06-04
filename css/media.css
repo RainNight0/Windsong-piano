@@ -1,25 +1,26 @@
 /*小型移动设备屏幕(小屏手机)*/
-@media screen and (max-width: 654px) {
+@media screen and (max-width: 654px) and (max-height: 320px) {
 	#pianoKeyPanel {
-		left: 54%;
+		left: 53%;
+		bottom: -4%;
 	}
 	.row-1, .row-2, .row-3 {
-		width: 520px;
+		width: 490px;
 	}
 	#g-clef {
 		width: 15px;
 		height: 40.2px;
-		margin: 4px 20px 4px 11.5px;
+		margin: 4px 14px 4px 7.5px;
 	}
 	#c-clef {
 		width: 18px;
 		height: 25.5px;
-		margin: 0px 18px 10px 10px;
+		margin: 0px 12px 10px 6px;
 	}
 	#f-clef {
 		width: 19px;
 		height: 22px;
-		margin: 0px 18px 12px 10px;
+		margin: 0px 12px 12px 6px;
 	}
 	.pianoKey {
 		width: 40px;
@@ -29,12 +30,12 @@
 	.pianoKeyCircle {
 		width: 54px;
 		height: 54px;
-		left: 4.5px;
+		left: 2px;
 		top: -4px;
 	}
 	.line {
 		width: 420px;
-		left: 10%;
+		left: 8.5%;
 		top: 16%;
 	}
 	.line>div {
@@ -54,10 +55,14 @@
 	.statement_text {
 		margin-top: 11px;
 	}
+	.dialog-size {
+		width: 0px;
+		height: 0px;
+	}
 }
 
 /*中型移动设备屏幕(手机)*/
-@media screen and (max-width: 823px) and (min-width: 655px) {
+@media screen and (max-width: 892px) and (max-height: 414px) and (min-width: 655px) and (min-height: 310px) {
 	#pianoKeyPanel {
 		left: 50%;
 	}
@@ -67,17 +72,17 @@
 	#g-clef {
 		width: 19.4px;
 		height: 52px;
-		margin: 4px 20px 4px 15px;
+		margin: 4px 19px 4px 16px;
 	}
 	#c-clef {
 		width: 25px;
 		height: 35.5px;
-		margin: 0px 18px 10px 11px;
+		margin: 0px 16px 10px 13px;
 	}
 	#f-clef {
 		width: 26px;
 		height: 32px;
-		margin: 0px 18px 12px 11px;
+		margin: 0px 15px 12px 13px;
 	}
 	.pianoKey {
 		width: 50px;
@@ -109,15 +114,15 @@
 	#statement_botton {
 		width: 20px;
 		height: 20px;
-		margin-bottom: 7.5px;
+		margin-bottom: 8.5px;
 	}
 	.statement_text {
 		font-size: 12px;
-		margin-top: 11px;
+		margin-top: 10px;
 	}
 	.dialog-size {
-		width: 500px;
-		height: 45px;
+		width: 445px;
+		height: 41px;
 	}
 }
 
@@ -132,7 +137,7 @@
 	#g-clef {
 		width: 29.3px;
 		height: 79px;
-		margin: 4px 20px 4px 5px;
+		margin: 4px 21px 4px 6px;
 	}
 	#c-clef {
 		width: 37px;
@@ -142,7 +147,7 @@
 	#f-clef {
 		width: 44px;
 		height: 53.8px;
-		margin: 0px 13px 18px 0px;
+		margin: 0px 12px 18px 0px;
 	}
 	.pianoKey {
 		width: 80px;
@@ -163,6 +168,10 @@
 	.line>div {
 		border-top: solid rgba(255, 255, 255, 0.5) 2px;
 		margin-top: 8px;
+	}
+	.dialog-size {
+		width: 600px;
+		height: 65px;/*185px*/
 	}
 }
 
