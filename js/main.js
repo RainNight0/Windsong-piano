@@ -172,6 +172,7 @@ function exitFullScreen(element) {
 }
 */
 
+//全屏按钮点击事件
 var $fullScreen = document.getElementById("FullScreen");
 if ($fullScreen) {
 	$fullScreen.addEventListener("click", function () {
@@ -190,6 +191,65 @@ if ($fullScreen) {
 		}
 	}, false);
 }
+//退出全屏按钮点击事件
+var $cancelFullScreen = document.getElementById("ExitFullScreen");
+if ($cancelFullScreen) {
+	$cancelFullScreen.addEventListener("click", function () {
+		if (document.exitFullscreen) {
+			document.exitFullscreen();
+		}
+		else if (document.msExitFullscreen) {
+			document.msExitFullscreen();
+		}
+		else if (document.mozCancelFullScreen) {
+			document.mozCancelFullScreen();
+		}
+		else if (document.webkitCancelFullScreen) {
+			document.webkitCancelFullScreen();
+		}
+	}, false);
+}
+//监听window是否全屏
+window.onresize = function() {
+	var isFull = !!(document.fullscreenElement || document.msFullscreenElement || document.mozFullScreen || document.webkitIsFullScreen);
+	if (isFull == false) {
+		$("#ExitFullScreen").css("display", "none");
+		$("#FullScreen").css("display", "");
+	} else {
+		$("#ExitFullScreen").css("display", "");
+		$("#FullScreen").css("display", "none");
+	}
+}
+
+//多点触控
+
+/*window.onload = function startup() {
+	const el = document.getElementsByTagName("canvas")[0];
+	el.addEventListener("touchstart", handleStart, false);
+	el.addEventListener("touchend", handleEnd, false);
+	el.addEventListener("touchmove", handleMove, false);
+}*/
+
+$(() => {
+	for (let i = 1; i < 3; i++) {
+		for (let o = 0; o < 7; o++) {
+			window.onload = function startup() {
+			const el = document.getElementsByTagName("key_${clickCode[i][o]}")[0];
+			el.addEventListener("touchstart", handleStart, false);
+			el.addEventListener("touchend", handleEnd, false);
+			el.addEventListener("touchenter", handleEnter, false);
+			el.addEventListener("touchleave", handleLeave, false);
+			}
+			function handleStart(evt) {
+				evt.preventDefault();
+				
+			}
+		}
+	}
+});
+
+
+
 /*
 var $cancelFullScreen = document.getElementsByClassName("ExitFullScreen");
 if ($cancelFullScreen) {
