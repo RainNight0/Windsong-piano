@@ -63,14 +63,12 @@ var keyBoardCode = {
 }
 
 var audio = {};
-
-//放置Piano Key
 $(() => {
 	if (i = 1) {
 		for (let o = 0; o < 7; o++) {
 			$(".row-1").append(
 				`<div class="pianoKeyContainer">
-					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/piano_key/${audioName[o]}.png');"></div>
+					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/${audioName[o]}.png');"></div>
 					<div id="circle${clickCode[i][o]}" class="pianoKeyCircle"></div>
 				</div>`);
 			audio[clickCode[i][o]] = new Audio();
@@ -83,7 +81,7 @@ $(() => {
 		for (let o = 0; o < 7; o++) {
 			$(".row-2").append(
 				`<div class="pianoKeyContainer">
-					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/piano_key/${audioName[o]}.png');"></div>
+					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/${audioName[o]}.png');"></div>
 					<div id="circle${clickCode[i][o]}" class="pianoKeyCircle"></div>
 				</div>`);
 			audio[clickCode[i][o]] = new Audio();
@@ -96,7 +94,7 @@ $(() => {
 		for (let o = 0; o < 7; o++) {
 			$(".row-3").append(
 				`<div class="pianoKeyContainer">
-					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/piano_key/${audioName[o]}.png');"></div>
+					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/${audioName[o]}.png');"></div>
 					<div id="circle${clickCode[i][o]}" class="pianoKeyCircle"></div>
 				</div>`);
 			audio[clickCode[i][o]] = new Audio();
@@ -124,7 +122,6 @@ $(document).keydown(
 		}
 	}
 )
-//播放声音
 function playAudio(key) {
 	console.log(key);
 	if (key != "-") {
@@ -134,7 +131,7 @@ function playAudio(key) {
 		music.play();
 	}
 }
-//琴键动画
+
 function keyAnimate(key) {
 	if (!keyAnimateArr[key]["bool"]) {
 		keyAnimateArr[key]["bool"] = true;
@@ -245,7 +242,7 @@ $(() => {
 			}
 			function handleStart(evt) {
 				evt.preventDefault();
-				
+				document.mozCancelFullScreen();
 			}
 		}
 	}
@@ -277,8 +274,7 @@ if ($cancelFullScreen) {
 }
 */
 
-//声明 按钮点击事件
-/*var $openStatementWindow = document.getElementById("statement_botton");
+var $openStatementWindow = document.getElementById("statement_botton");
 if ($openStatementWindow) {
 	$openStatementWindow.addEventListener("click", function () {
 		document.getElementById("statement_window_box").style.display = "block";
@@ -289,17 +285,4 @@ if ($openStatementWindow) {
 	$openStatementWindow.addEventListener("click", function () {
 		document.getElementById("statement_window_box").style.display = "none";
 	});
-}*/
-
-var eID_about_button = document.getElementById("about_botton");
-var eID_exit_about_window = document.getElementById("exit_about_window");
-if (eID_about_button) {
-	eID_about_button.addEventListener("click", open = () => {
-		document.getElementById("about_window_box").style.display = "block";
-	})
-}
-if (eID_exit_about_window) {
-	eID_exit_about_window.addEventListener("click", open = () => {
-		document.getElementById("about_window_box").style.display = "none";
-	})
 }

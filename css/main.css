@@ -21,40 +21,40 @@ body {
 	margin: 0px;
 }
 
-/*信息窗口*/
-#statement_window_box {
+/*about dialog*/
+#about_window_box {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(64, 64, 64, 0.5);
 	z-index: 10;
 }
-#statement_botton {
+#about_botton {
 	width: 22px;
 	height: 22px;
-	background-image: url(../images/statement_default.png);
+	background-image: url(../images/ui/statement_default.png);
 	border: 0px;
 	border-radius: 50%;
 	background-size: cover;
 	margin-bottom: 9.5px;
 }
-#statement_botton:hover {
-	background-image: url(../images/statement_hover.png);
+#about_botton:hover {
+	background-image: url(../images/ui/statement_hover.png);
 }
-#statement_botton:active {
-	background-image: url(../images/statement_pressed.png);
+#about_botton:active {
+	background-image: url(../images/ui/statement_pressed.png);
 }
-.statement_text {
+.about_text {
 	vertical-align: top;
 	margin-top: 12.5px; 
 	margin-right: 15px;
 	font-size: 12px;
 }
-#exit_statement_window:hover {
-	background-image: url(../images/exit_hover.png);
+#exit_about_window:hover {
+	background-image: url(../images/ui/exit_hover.png);
 }
-#exit_statement_window:active {
-	background-image: url(../images/exit_pressed.png);
+#exit_about_window:active {
+	background-image: url(../images/ui/exit_pressed.png);
 }
 
 .lt { text-decoration: line-through; }
@@ -92,11 +92,22 @@ body {
 	align-items: center;
 }
 
+/*谱号*/
 #g-clef, #c-clef, #f-clef {
 	display: inline-block;
 	background-size: cover;
 }
+#g-clef {
+	background-image: url(../images/G_Clef.svg);
+}
+#c-clef {
+	background-image: url(../images/C_Clef.svg);
+}
+#f-clef {
+	background-image: url(../images/F_Clef.svg);
+}
 
+/*琴键底下的线*/
 .line {
 	z-index: -20;
 	position: absolute;
@@ -177,29 +188,29 @@ body {
 #FullScreen {
 	width: 40px;
 	height: 40px;
-	background-image: url(../images/full_screen_default.png);
+	background-image: url(../images/ui/full_screen_default.png);
 	border: 0px;
 	border-radius: 50%;
 	background-size: cover;
 }
 #FullScreen:hover {
-	background-image: url(../images/full_screen_hover.png);
+	background-image: url(../images/ui/full_screen_hover.png);
 }
 #FullScreen:active {
-	background-image: url(../images/full_screen_pressed.png);
+	background-image: url(../images/ui/full_screen_pressed.png);
 }
 
 #ExitFullScreen {
 	width: 40px;
 	height: 40px;
-	background-image: url(../images/exit_full_screen_default.png);
+	background-image: url(../images/ui/exit_full_screen_default.png);
 	border: 0px;
 	border-radius: 50%;
 	background-size: cover;
 }
 #ExitFullScreen:hover {
-	background-image: url(../images/exit_full_screen_hover.png);
+	background-image: url(../images/ui/exit_full_screen_hover.png);
 }
 #ExitFullScreen:active {
-	background-image: url(../images/exit_full_screen_pressed.png);
+	background-image: url(../images/ui/exit_full_screen_pressed.png);
 }
