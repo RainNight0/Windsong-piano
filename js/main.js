@@ -62,7 +62,7 @@ var keyBoardCode = {
 	90: "z"
 }
 
-var audio = {};
+let audio = {};
 
 //放置Piano Key
 $(() => {
@@ -72,9 +72,10 @@ $(() => {
 				`<div class="pianoKeyContainer">
 					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/piano_key/${audioName[o]}.png');"></div>
 					<div id="circle${clickCode[i][o]}" class="pianoKeyCircle"></div>
-				</div>`);
+				</div>`
+			);
 			audio[clickCode[i][o]] = new Audio();
-			audio[clickCode[i][o]].src = `audio/${clickCode[i][o]}.wav`;
+			audio[clickCode[i][o]].src = `audio/${clickCode[i][o]}.ogg`;
 		}
 	}
 });
@@ -85,9 +86,10 @@ $(() => {
 				`<div class="pianoKeyContainer">
 					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/piano_key/${audioName[o]}.png');"></div>
 					<div id="circle${clickCode[i][o]}" class="pianoKeyCircle"></div>
-				</div>`);
+				</div>`
+			);
 			audio[clickCode[i][o]] = new Audio();
-			audio[clickCode[i][o]].src = `audio/${clickCode[i][o]}.wav`;
+			audio[clickCode[i][o]].src = `audio/${clickCode[i][o]}.ogg`;
 		}
 	}
 });
@@ -98,32 +100,29 @@ $(() => {
 				`<div class="pianoKeyContainer">
 					<div id="key_${clickCode[i][o]}" onclick="sing(${i},${o});" class="pianoKey" style="background-image: url('images/piano_key/${audioName[o]}.png');"></div>
 					<div id="circle${clickCode[i][o]}" class="pianoKeyCircle"></div>
-				</div>`);
+				</div>`
+			);
 			audio[clickCode[i][o]] = new Audio();
-			audio[clickCode[i][o]].src = `audio/${clickCode[i][o]}.wav`;
+			audio[clickCode[i][o]].src = `audio/${clickCode[i][o]}.ogg`;
 		}
 	}
 });
 let keyAnimateArr = new Array();
-$(
-	() => {
-		for (let i in keyBoardCode) {
-			keyAnimateArr[keyBoardCode[i]] = {
-				bool: false
-			}
+$(() => {
+	for (let i in keyBoardCode) {
+		keyAnimateArr[keyBoardCode[i]] = {
+			bool: false
 		}
 	}
-);
+});
 function sing(i, o) {
 	playAudio(clickCode[i][o]);
 }
-$(document).keydown(
-	(event) => {
-		if (keyBoardCode[event.keyCode] != undefined) {
-			playAudio(keyBoardCode[event.keyCode]);
-		}
+$(document).keydown((event) => {
+	if (keyBoardCode[event.keyCode] != undefined) {
+		playAudio(keyBoardCode[event.keyCode]);
 	}
-)
+});
 //播放声音
 function playAudio(key) {
 	console.log(key);
@@ -214,7 +213,12 @@ if ($cancelFullScreen) {
 }
 //监听window是否全屏
 window.onresize = function() {
-	var isFull = !!(document.fullscreenElement || document.msFullscreenElement || document.mozFullScreen || document.webkitIsFullScreen);
+	var isFull = !!(
+	document.fullscreenElement ||
+	document.msFullscreenElement ||
+	document.mozFullScreen ||
+	document.webkitIsFullScreen
+	);
 	if (isFull == false) {
 		$("#ExitFullScreen").css("display", "none");
 		$("#FullScreen").css("display", "");
@@ -223,34 +227,6 @@ window.onresize = function() {
 		$("#FullScreen").css("display", "none");
 	}
 }
-
-//多点触控
-
-/*window.onload = function startup() {
-	const el = document.getElementsByTagName("canvas")[0];
-	el.addEventListener("touchstart", handleStart, false);
-	el.addEventListener("touchend", handleEnd, false);
-	el.addEventListener("touchmove", handleMove, false);
-}*/
-
-$(() => {
-	for (let i = 1; i < 3; i++) {
-		for (let o = 0; o < 7; o++) {
-			window.onload = function startup() {
-			const el = document.getElementsByTagName("key_${clickCode[i][o]}")[0];
-			el.addEventListener("touchstart", handleStart, false);
-			el.addEventListener("touchend", handleEnd, false);
-			el.addEventListener("touchenter", handleEnter, false);
-			el.addEventListener("touchleave", handleLeave, false);
-			}
-			function handleStart(evt) {
-				evt.preventDefault();
-				
-			}
-		}
-	}
-});
-
 
 
 /*
